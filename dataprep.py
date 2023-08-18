@@ -21,7 +21,7 @@ embeddings = SentenceTransformerEmbeddings(model_name=EMBEDDING_MODEL)
 
 # Step2: Create a list of html contents from the documents
 html_docs = []
-path_to_dir = f"./aws_docs/sagemaker/"
+path_to_dir = f"./slalom_docs/website/"
 html_files = glob.glob(os.path.join(path_to_dir, "*.html"))
 for _file in html_files:
     with open(_file) as f:
